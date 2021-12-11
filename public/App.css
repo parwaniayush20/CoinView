@@ -144,6 +144,7 @@ a:hover {
     .ant-typography.heading {
         margin: -6px 0 10px;
     }
+
 }
 
 .coin-detail-container {
@@ -297,11 +298,19 @@ a:hover {
     .coin-detail-container {
         margin: 0;
     }
+
+    .logo{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .heading {
         margin-top: 20px;
+    }
+
+    .logo{
+        display: none;
     }
 }
 

@@ -12,7 +12,7 @@ const { Option } = Select;
 
 const News = ({ simplified }) => {
     const [newsCategory, setnewsCategory] = useState("Cryptocurrency")
-    const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 11 : 38 });
+    const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 12 : 38 });
     const { data } = useGetCryptosQuery(100);
 
     if (!cryptoNews?.value) return <Loader />
@@ -63,7 +63,7 @@ const News = ({ simplified }) => {
                                         {newsItem.provider[0]?.name}
                                     </Text>
                                 </div>
-                                <Text style={{ fontSize: "13px", marginTop: "3px" }}>
+                                <Text style={{ fontSize: "13px", marginTop: "5px" }}>
                                     {moment(newsItem.datePublished).startOf('ss').fromNow()}
                                 </Text>
                             </div>

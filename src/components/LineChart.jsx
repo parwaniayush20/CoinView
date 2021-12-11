@@ -48,7 +48,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
                 <Title level={3} className="chart-title">Total Market Capitalization and Volume, $</Title>
                 <Col className="price-container">
                     <Title level={5} className="price-change">Net Change: {coinHistory?.data?.change}%</Title>
-                    <Title level={5} className="current-price">Current Price (in $) : {currentPrice}</Title>
+                    <Title level={5} className="current-price">Current Price: {currentPrice}</Title>
                 </Col>
             </Row>
             <Line data={data} options={options} />
