@@ -37,8 +37,8 @@ const App = () => {
                 </Layout>
                 <div className="footer" >
                     <Typography.Title level={5} style={{ color: "white", textAlign: "right", fontWeight: "80", opacity: "0.5" }}>
-                        <Typography.Title level={5} className="logo">
-                            <span style={{ color: "white", textAlign: "right", fontWeight: "100",}}>Select market data provided by </span> <Link to="https://rapidapi.com/Coinranking/api/coinranking1/">Coinranking</Link>
+                        <Typography.Title level={5} className="logo-footer">
+                            <span style={{ color: "white", textAlign: "right", fontWeight: "100",}}>Select market data provided by </span> <Link to="">Coinranking</Link>
                         </Typography.Title>
                         © {year} CryptoView
                     </Typography.Title>
